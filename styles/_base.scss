@@ -1,0 +1,42 @@
+$darkGray: #1d1d1d;
+$gray: #333;
+$white: #fff;
+$red: #ff0000;
+$fontFamily: "Lexend", Arial, Helvetica, sans-serif;
+$transition: all 0.2s ease;
+
+@mixin ipad {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media screen and (max-width: 430px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+@mixin flexbox($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+@mixin menu-cart($x, $y) {
+  width: 500px;
+  background-color: $white;
+  padding: 25px;
+  box-sizing: border-box;
+  height: 86%;
+  position: fixed;
+  top: 137.2px;
+  box-shadow: $x $y 22px -15px rgba(0, 0, 0, 30);
+  transition: $transition;
+}

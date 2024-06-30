@@ -1,0 +1,33 @@
+.banner {
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    background-position-y: 35%;
+  
+    @include iphone {
+      padding: 30px 0;
+    }
+  
+    &__title {
+      font-weight: 600;
+      font-size: 1.87rem;
+      margin-bottom: 10px;
+  
+      @include iphone {
+        font-size: 1.125rem;
+      }
+    }
+  
+    &__description {
+      margin: 0 auto;
+      font-size: 1.56rem;
+  
+      @include iphone {
+        font-size: 1rem;
+      }
+    }
+  }
+  

@@ -1,0 +1,35 @@
+.menu {
+    @include menu-cart(19px, 1px);
+    left: -100%;
+  
+    @include iphone {
+      width: 100%;
+      height: 84%;
+      top: 108.03px;
+      box-shadow: none;
+      padding: 10px;
+    }
+  
+    &__header {
+      @include flexbox(space-between);
+  
+      &--close-icon {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      &--option {
+        text-decoration: none;
+        color: $darkGray;
+        font-weight: 500;
+        padding-left: 20px;
+      }
+    }
+  }
+  

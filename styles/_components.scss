@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+    font-weight: 300;
+    color: $darkGray;
+    font-family: $fontFamily;
+    margin: 0;
+  }
+  
+  .invisible-box {
+    margin: 0;
+    height: 137.2px;
+  
+    @include iphone {
+      height: 108.03px;
+    }
+  }
+  

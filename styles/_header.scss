@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: $gray;
+    @include flexbox(space-between);
+    box-sizing: border-box;
+    position: fixed;
+  
+    &__icon {
+      position: relative;
+      @include flexbox(center);
+  
+      &--menu,
+      &--cart {
+        width: 35px;
+        cursor: pointer;
+  
+        @include iphone {
+          width: 30px;
+        }
+      }
+  
+      &--badge {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -25px;
+        right: -10px;
+        @include flexbox(center);
+        font-size: 0.875rem;
+        background-color: $red;
+        color: $white;
+        border-radius: 50%;
+  
+        @include iphone {
+          width: 18px;
+          height: 18px;
+          top: -23px;
+        }
+      }
+    }
+  
+    &__logo {
+      width: 100px;
+  
+      @include iphone {
+        width: 70px;
+      }
+    }
+  }
+  

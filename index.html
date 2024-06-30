@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/functions.js" defer></script>
+    <title>Tienda Adidas</title>
+</head>
+<body>
+    <header class="header">
+        <i class="header__icon"><img class="header__icon--menu" src="img/menu.png" alt="Icono Menu"></i>
+        <img class="header__logo" src="img/logo.png" alt="Logo Adidas">
+        <div class="header__icon">
+            <i class="header__icon"><img class="header__icon--cart" src="img/cart.png" alt="Icono de Carrito"></i>
+            <p class="header__icon--badge">0</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu">
+            <div class="menu__header">
+                <h2 class="menu__header--title">MENU</h2>
+                <i><img class= "menu__header--close-icon" src="img/close-icon.png"></i>
+            </div>
+            <nav class="menu__content">
+                <a class="menu__content--option 1" href="#">CALZADO</a>
+                <a class="menu__content--option 2" href="#">MUJER</a>
+                <a class="menu__content--option 3" href="#">HOMBRE</a>
+                <a class="menu__content--option 4" href="#">NIÑOS</a>
+                <a class="menu__content--option 5" href="#">DEPORTE</a>
+                <a class="menu__content--option 6" href="#">MUNDO ADIDAS</a>
+                <a class="menu__content--option 7" href="#">OUTLET</a>
+            </nav>
+        </section>
+
+        <div class="invisible-box"></div>
+
+        <section class="banner">
+            <h2 class="banner__title">Productos Nuevos</h2>
+            <p class="banner__description">Conoce nuestros productos nuevos</p>
+        </section>
+
+        <section class="products">
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/mexico.jpg">
+                <h3 class="products__item--title">Jersey adidas Seleccion Mexico</h3>
+                <p class="products__item--price">$1499.00</p>
+                <button class="products__item--button" data-id="1">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/chamarra.jpg">
+                <h3 class="products__item--title">Chamarra adidas Adicolor Classics </h3>
+                <p class="products__item--price">$899.00</p>
+                <button class="products__item--button" data-id="2">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/tenis.jpg">
+                <h3 class="products__item--title">Tenis Samba Decon</h3>
+                <p class="products__item--price">$2799.00</p>
+                <button class="products__item--button" data-id="3">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/mexico-2.jpg">
+                <h3 class="products__item--title">adidas Mexico 22 Home Jersey</h3>
+                <p class="products__item--price">$1499.00</p>
+                <button class="products__item--button" data-id="4">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/jacket.avif">
+                <h3 class="products__item--title">Padded Jacket</h3>
+                <p class="products__item--price">$4299.00</p>
+                <button class="products__item--button" data-id="5">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/arsenal.jpg">
+                <h3 class="products__item--title">Jersey Adidas Arsenal FC Local 2022-2023</h3>
+                <p class="products__item--price">$1799.00</p>
+                <button class="products__item--button" data-id="6">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/windbraker.avif">
+                <h3 class="products__item--title">Chamarra Adicolor Colorblock</h3>
+                <p class="products__item--price">$2199.00</p>
+                <button class="products__item--button" data-id="7">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/tenis-rayas.avif">
+                <h3 class="products__item--title">Tenis adidas Grand Court Base</h3>
+                <p class="products__item--price">$1299.00</p>
+                <button class="products__item--button" data-id="8">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/t-shirt.avif">
+                <h3 class="products__item--title">Playera Adicolor Classics 3 Franjas</h3>
+                <p class="products__item--price">$699.00</p>
+                <button class="products__item--button" data-id="9">Agregar al carrito</button>
+            </article>
+
+            <article class="products__item">
+                <img class="products__item--img mouse" src="img/sweatshirt.jpg">
+                <h3 class="products__item--title">Sudadera adidas Unitefit Sweat</h3>
+                <p class="products__item--price">$1399.00</p>
+                <button class="products__item--button" data-id="10">Agregar al carrito</button>
+            </article>
+        </section>
+
+        <section class="cart">
+            <h2 class="cart__title">CARRITO</h2>
+            <article class="cart__content">
+
+            </article>
+            <article class="cart__total">
+                <h2 class="cart__total--title">TOTAL:</h2>
+                <p class="cart__total--total">$0</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
